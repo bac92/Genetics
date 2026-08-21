@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Confermata - Genetics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b0e14;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background-color: #1a2639;
+            border: 2px solid #00f2fe;
+            border-radius: 20px;
+            padding: 40px 30px;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.25);
+        }
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.5);
+        }
+        .icon-container svg {
+            width: 45px;
+            height: 45px;
+            fill: #0b0e14;
+        }
+        h1 {
+            font-size: 26px;
+            color: #ffffff;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #a0aec0;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+        .highlight {
+            color: #00f2fe;
+            font-weight: bold;
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(0, 242, 254, 0.1);
+            color: #00f2fe;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid rgba(0, 242, 254, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Spunta di Successo -->
+        <div class="icon-container">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+        </div>
+
+        <h1>Email Confermata!</h1>
+        
+        <p>Il tuo indirizzo email è stato verificato con successo per l'account <span class="highlight">Genetics</span>.</p>
+
+        <div class="badge">
+            Puoi chiudere questa scheda e tornare all'App
+        </div>
+    </div>
+
+</body>
+</html>
