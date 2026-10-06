@@ -212,7 +212,7 @@
     const SUPABASE_URL = "https://api.genetics.me.uk";
 
     // METTI QUI LA TUA ANON KEY / PUBLISHABLE KEY
-    const SUPABASE_ANON_KEY = "LA_TUA_ANON_KEY";
+    const SUPABASE_ANON_KEY = "sb_publishable_IieuxYdcCKQ1tot4j6-IGx_x9ln55tx";
 
     const supabaseClient = window.supabase.createClient(
         SUPABASE_URL,
@@ -253,7 +253,7 @@
 
         if (password.length < 6) {
             showError(
-                "La password deve contenere almeno 6 caratteri."
+                "La password deve contenere almeno 8 caratteri."
             );
             return;
         }
